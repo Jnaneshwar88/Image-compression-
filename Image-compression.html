@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToolMaster - Image & PDF Tools</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Header */
+    header {
+      background-color: #fff;
+      padding: 20px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    header nav ul li a {
+      font-weight: bold;
+    }
+
+    header .cta {
+      margin-left: auto;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      padding: 100px 0;
+      background-color: #f9f9f9;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 80px 0;
+      background-color: #fff;
+    }
+
+    .features h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2rem;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-card {
+      text-align: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+    }
+
+    .feature-card i {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+
+    /* Tools Section */
+    .tools {
+      padding: 80px 0;
+      background-color: #f9f9f9;
+    }
+
+    .tools h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2rem;
+    }
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+
+    .tool-card {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .tool-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 40px 0;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    footer .footer-links {
+      margin-bottom: 20px;
+    }
+
+    footer .footer-links a {
+      margin: 0 15px;
+      color: #fff;
+    }
+
+    footer .social-icons a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header nav {
+        display: none;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-image {
+        margin-top: 30px;
+      }
+
+      .feature-grid, .tool-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="ToolMaster Logo">
+        <h1>ToolMaster</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cta">
+        <a href="#tools" class="btn">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h2>Your Ultimate Image & PDF Toolkit</h2>
+        <p>Convert, compress, edit, and manage your files with ease. Fast, secure, and free!</p>
+        <a href="#tools" class="btn">Explore Tools</a>
+      </div>
+      <div class="hero-image">
+        <img src="hero-image.png" alt="Image and PDF Tools">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Why Choose ToolMaster?</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <i class="fas fa-tools"></i>
+          <h3>Powerful Tools</h3>
+          <p>Wide range of tools for images and PDFs, including converters, compressors, and editors.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Secure & Private</h3>
+          <p>Your files are safe with us. We don't store or share your data.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-rocket"></i>
+          <h3>Fast Processing</h3>
+          <p>Optimized for speed. Get results in seconds, not minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section id="tools" class="tools">
+    <div class="container">
+      <h2>Our Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card">
+          <img src="image-converter.png" alt="Image Converter">
+          <h3>Image Converter</h3>
+          <p>Convert images to JPG, PNG, SVG, and more.</p>
+        </div>
+        <div class="tool-card">
+          <img src="pdf-compressor.png" alt="PDF Compressor">
+          <h3>PDF Compressor</h3>
+          <p>Reduce PDF file size without losing quality.</p>
+        </div>
+        <div class="tool-card">
+          <img src="image-editor.png" alt="Image Editor">
+          <h3>Image Editor</h3>
+          <p>Crop, resize, and enhance your images.</p>
+        </div>
+        <div class="tool-card">
+          <img src="pdf-merger.png" alt="PDF Merger">
+          <h3>PDF Merger</h3>
+          <p>Combine multiple PDFs into one document.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
